@@ -1,6 +1,6 @@
-import Habits from "./habits/habits";
-import Historic from "./habits/historic";
-import Today from "./habits/today";
+import Habits from "./habits";
+import Historic from "./historic";
+import Today from "./today";
 import Registration from "./registration";
 import Login from "./login";
 
