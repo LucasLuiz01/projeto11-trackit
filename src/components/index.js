@@ -7,5 +7,21 @@ import Padding from "./Padding";
 import AddHab from "./AddHab";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import NenhumHabito from "./NenhumHabito";
+import TextHH from "./TextHH";
+import Body from "./body";
 
-export { Button, Column, Input, Logo, Link, Padding, AddHab, Navbar, Footer };
+export {
+  Button,
+  NenhumHabito,
+  Column,
+  Input,
+  Logo,
+  Link,
+  Padding,
+  AddHab,
+  Navbar,
+  Footer,
+  TextHH,
+  Body,
+};

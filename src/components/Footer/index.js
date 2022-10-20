@@ -1,6 +1,6 @@
 import { StyledFooter } from "./styles"
-export default function Footer(){
+export default function Footer(props){
     return(
-        <StyledFooter />
+        <StyledFooter >{props.children}</StyledFooter>
     )
 }

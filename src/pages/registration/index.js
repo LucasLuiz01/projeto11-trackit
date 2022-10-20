@@ -1,4 +1,4 @@
-import styled from "styled-components";
+
 import { Button, Column, Input, Logo, Link, Padding } from "../../components";
 
 export default function Registration() {
