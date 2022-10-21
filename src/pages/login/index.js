@@ -1,15 +1,18 @@
 import { Button, Column, Input, Logo, Links, Padding } from "../../components";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import React from "react";
+import Context from "../Context";
 
 
-export default function Login({setLogin}) {
+
+export default function Login() {
   const [password, setPassWord] = useState("");
   const [emai, setEmai] = useState("");
   const navigate = useNavigate();
+  const { setLogin } = useContext(Context);
   const url = "https://mock-api.bootcamp.respondeai.com.br/api/v2/trackit/auth/login"
   function login (e) {
     e.preventDefault()

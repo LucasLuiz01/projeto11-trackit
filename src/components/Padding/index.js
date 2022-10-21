@@ -8,6 +8,9 @@ export default function Padding(props) {
     if (props.size === "big") {
         size = 32;
     }
+    if(props.size === "input"){
+        size = 18;
+    }
 
     return <div style={{height: `${size}px`}}></div>
 }
