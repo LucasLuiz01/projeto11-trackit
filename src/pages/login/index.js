@@ -2,9 +2,14 @@ import { Button, Column, Input, Logo, Links, Padding } from "../../components";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
-export default function Login() {
+import { useNavigate } from "react-router-dom";
+import React from "react";
+
+
+export default function Login({setLogin}) {
   const [password, setPassWord] = useState("");
   const [emai, setEmai] = useState("");
+  const navigate = useNavigate();
   const url = "https://mock-api.bootcamp.respondeai.com.br/api/v2/trackit/auth/login"
   function login (e) {
     e.preventDefault()
@@ -14,6 +19,8 @@ export default function Login() {
     })
     promisse.then((dados)=>{
       console.log("sucesso", dados.data)
+      setLogin(dados.data)
+      navigate("/habitos")
     })
     promisse.catch((err)=>{
       console.log(err.response.data)
@@ -37,9 +44,9 @@ export default function Login() {
        value={password}
         onChange={(e) => setPassWord(e.target.value)}
        />
-      </form>
       <Padding />
       <Button text="Entrar" />
+      </form>
       <Padding size="big" />
       <Link to="/cadastro"> 
      <Links text="Não tem uma conta? Cadastre-se!" />

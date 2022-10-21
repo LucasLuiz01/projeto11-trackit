@@ -4,7 +4,6 @@ import Input from "./Input";
 import Logo from "./Logo";
 import Links from "./Link";
 import Padding from "./Padding";
-import AddHab from "./AddHab";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import NenhumHabito from "./NenhumHabito";
@@ -19,7 +18,6 @@ export {
   Logo,
   Links,
   Padding,
-  AddHab,
   Navbar,
   Footer,
   TextHH,
