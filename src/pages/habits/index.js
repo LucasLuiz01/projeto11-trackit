@@ -26,8 +26,8 @@ export default function Habits() {
       <TextHH text={"Hábitos"} />
         <div style={{ width: 91, height: 91, position: "fixed", bottom: "10px" }}>
         <CircularProgressbar
-        value={30}
-        text="HOJE"
+        value={60}
+        text="Hoje"
         background
         backgroundPadding={6}
         styles={buildStyles({

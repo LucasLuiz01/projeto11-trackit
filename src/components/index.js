@@ -2,7 +2,7 @@ import Button from "./Button";
 import Column from "./Column";
 import Input from "./Input";
 import Logo from "./Logo";
-import Link from "./Link";
+import Links from "./Link";
 import Padding from "./Padding";
 import AddHab from "./AddHab";
 import Navbar from "./Navbar";
@@ -17,7 +17,7 @@ export {
   Column,
   Input,
   Logo,
-  Link,
+  Links,
   Padding,
   AddHab,
   Navbar,

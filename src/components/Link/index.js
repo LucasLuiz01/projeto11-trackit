@@ -1,5 +1,5 @@
 import { StyledLink } from "./styles";
 
-export default function Link(props) {
+export default function Links (props) {
     return <StyledLink>{props.text}</StyledLink>
 }
